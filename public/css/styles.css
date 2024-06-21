@@ -1,0 +1,187 @@
+body {
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 15%; /* Adjust to provide space for the header */
+    padding-right: 20%;
+  
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0; /* Added padding for the header */
+}
+
+nav.glass {
+    background: rgba(255, 255, 255, 0.1);
+    background-image:image();
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: url(img.png);
+}
+
+nav.glass a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav.glass a svg {
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.form-container, .content {
+    flex-direction: column;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    /* height: 200px; */
+    width: 200%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #3700b3;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filters select {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+#college-list {
+    list-style: none;
+    padding: 0;
+}
+
+#college-list li {
+    background-color: #2c2c2c;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#college-details {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-page button {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#home-page button:hover {
+    background-color: #3700b3;
+}
